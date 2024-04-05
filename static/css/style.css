@@ -1,0 +1,101 @@
+/* Base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    color: #f50057;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #f50057;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #222;
+    min-height: 400px; /* Adjust based on content */
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #f50057;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Section Styling */
+section {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+/* Link Styling */
+a {
+    color: #f50057;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images */
+    padding: 20px 0;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 300px; /* Adjust based on your preference */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Rafael KAMPIOEN van Belgie</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Goed getrained Rafael!</h2>
+                <div class="image-gallery">
+                    <img src="{{ url_for('static', filename='images/1705925158854.jpg') }}" alt="Image 1">
+                    <img src="{{ url_for('static', filename='images/1705926962739.jpg') }}" alt="Image 2">
+                    <img src="{{ url_for('static', filename='images/1705926962777.jpg') }}" alt="Image 3">
+                    <img src="{{ url_for('static', filename='images/1705926962811.jpg') }}" alt="Image 4">
+                </div>
+            <p>slaapwel.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Flask App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
