@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Rafael KAMPIOEN van Belgie</h1>
+        <h1>JAMES NEURAL</h1>
     </header>
     <nav>
         <ul>
@@ -19,18 +19,18 @@
     </nav>
     <main>
         <section>
-            <h2>Goed getrained Rafael!</h2>
+            <h2>MIDJOURNEY 2023</h2>
                 <div class="image-gallery">
-                    <img src="{{ url_for('static', filename='images/1705925158854.jpg') }}" alt="Image 1">
-                    <img src="{{ url_for('static', filename='images/1705926962739.jpg') }}" alt="Image 2">
-                    <img src="{{ url_for('static', filename='images/1705926962777.jpg') }}" alt="Image 3">
-                    <img src="{{ url_for('static', filename='images/1705926962811.jpg') }}" alt="Image 4">
+                {% for image in images %}
+                <img src="{{ url_for('static', filename=image) }}" alt="Portfolio Image">
+                {% endfor %}
                 </div>
-            <p>slaapwel.</p>
+            <p>@JamesNeural</p>
+            <br>
         </section>
     </main>
     <footer>
-        <p>© 2024 Flask App. All rights reserved.</p>
+        <p>© 2023 James Neural. All rights reserved.</p>
     </footer>
 </body>
 </html>
