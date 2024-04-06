@@ -4,6 +4,7 @@ import random
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def gallery():
     image_folder = os.path.join('static', 'images')
@@ -12,6 +13,6 @@ def gallery():
     random.shuffle(images)
     return render_template('index.html', images=images)
 
+
 if __name__ == '__main__':
     app.run(debug=True)
-
